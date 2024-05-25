@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Sign In</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image:url("1.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.39);
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    flex: 1;
+    text-align: center;
+    margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin:0 auto; 
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h2><strong>Sign In</strong></h2>
+    <form id="signInForm" action="http://localhost:3000/signin" method="POST">
+
+        <div class="input-group">
+            <label for="username"><strong>Username:</strong></label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="input-group">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+        </div>
+        <div class="input-group">
+            <label for="password"><strong>Password:</strong></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit"><strong><a href="Login.html"></a>Sign In </strong></button><br>
+        <p1><strong></strong><a href="Login.html">Go to Login-Page --></a></strong></p1>
+    </form>
+</div>
+</body>
+</html>
